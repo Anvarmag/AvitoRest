@@ -1,0 +1,77 @@
+
+###
+GET http://project-avitorest.herokuapp.com/flats
+
+###
+GET http://project-avitorest.herokuapp.com/flats
+
+###
+GET http://project-avitorest.herokuapp.com/flats/filter?minPrice=1000000&maxPrice=4100000
+
+
+###
+POST http://project-avitorest.herokuapp.com/flats
+Content-Type: application/json
+
+{
+  "name": "ЖК 'Станция Спортивная",
+  "url": "http://...",
+  "image": "http://...",
+  "street": "пр-д Детский,д.1 к2,р-н Приволжский",
+  "room": "1",
+  "square": "31.2",
+  "floor": "9",
+  "maxFloor": "19",
+  "price": "4046000"
+}
+
+###
+POST http://project-avitorest.herokuapp.com/flats
+Content-Type: application/json
+
+{
+  "name": "ЖК 'Казань 21 век'",
+  "metro": "Метро 'Горки'",
+  "url": "http://...",
+  "image": "http://...",
+  "street": "пр-т Альберта Камалеева,д.32Б",
+  "agency": "Агентсво недвижимости 'Ключ'",
+  "room": "1",
+  "square": "33",
+  "floor": "17",
+  "maxFloor": "19",
+  "price": "4350000",
+  "distance": "2.5"
+}
+
+###
+POST http://project-avitorest.herokuapp.com/flats
+Content-Type: application/json
+
+{
+"name": "Жилой дом",
+"metro": "Метро 'Площадь Тукая'",
+"url": "http://...",
+"image": "http://...",
+"street": "ул.Карла Маркса,д.39А",
+"agency": "Агентсво недвижимости 'Ключ'",
+"room": "3",
+"square": "132.1",
+"floor": "4",
+"maxFloor": "5",
+"price": "21150000",
+"distance": "1.1"
+}
+
+###
+PUT http://project-avitorest.herokuapp.com/flats/1
+Content-Type: application/json
+
+{
+  "name": "Новое имя",
+  "price": "99999999"
+
+}
+
+###
+DELETE http://project-avitorest.herokuapp.com/flats/1
